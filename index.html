@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Springbyte Software Services - Professional Web & Mobile App Development</title>
+    <meta name="description" content="Professional software development services by Springbyte. Web development, mobile apps, and custom solutions starting from ₹15,000.">
+    
+    <!-- Updated CSS and library imports for modern mobile app -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="reponsive.css">
+    
+    <!-- Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/locomotive-scroll/4.1.4/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/locomotive-scroll/4.1.4/locomotive-scroll.css">
+    
+    <!-- Preload fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Added loading screen for better UX -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1 class="brand-text">SPRINGBYTE</h1>
+                <span class="brand-subtitle">SOFTWARE SERVICES</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content" data-scroll-container>
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero-section" data-scroll-section>
+            <div class="hero-content">
+                <h1 class="hero-title" data-scroll data-scroll-speed="2">
+                    Professional <span class="gradient-text">Software Development</span> Services
+                </h1>
+                <p class="hero-description" data-scroll data-scroll-speed="1">
+                    Transform your ideas into powerful digital solutions with our expert team. 
+                    From websites to mobile apps, we deliver scalable and affordable solutions.
+                </p>
+                <div class="hero-buttons">
+                   <button id="getStartedBtn" class="btn">Get Started</button>
+
+                    <a href="/assets/page1.html" class="btn btn-secondary">Our Services</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Client Satisfaction</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section" data-scroll-section>
+            <div class="container">
+                <h2 class="section-title" data-scroll data-scroll-speed="1">About Springbyte</h2>
+                <div class="about-content">
+                    <div class="about-text" data-scroll data-scroll-speed="0.5">
+                        <p>
+                            Springbyte Software Services is a leading software development company based in Noida, India. 
+                            We specialize in creating custom web applications, mobile apps, and digital solutions that 
+                            help businesses grow and succeed in the digital world.
+                        </p>
+                        <p>
+                            Our team combines technical expertise with creative innovation to deliver solutions that 
+                            are not only functional but also user-friendly and scalable. We pride ourselves on 
+                            delivering projects on time and within budget.
+                        </p>
+                    </div>
+                    <div class="about-features" data-scroll data-scroll-speed="0.8">
+                        <div class="feature-item">
+                            <div class="feature-icon">🚀</div>
+                            <h3>Fast Delivery</h3>
+                            <p>Quick turnaround times without compromising quality</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">💡</div>
+                            <h3>Innovative Solutions</h3>
+                            <p>Cutting-edge technology and creative problem-solving</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🎯</div>
+                            <h3>Client-Focused</h3>
+                            <p>Tailored solutions that meet your specific needs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Services Section with Swiper carousel for mobile -->
+        <section id="services" class="services-section" data-scroll-section>
+            <div class="container">
+                <h2  class="section-title" data-scroll data-scroll-speed="1">Our Services</h2>
+                
+                <!-- Desktop Grid -->
+                <div class="services-grid desktop-only">
+                    <div class="service-card" data-scroll data-scroll-speed="0.6">
+                        <div class="service-icon">🌐</div>
+                        <h3>Website Development</h3>
+                        <p>Custom websites with responsive design, CMS integration, and SEO optimization</p>
+                        <ul class="service-features">
+                            <li>Responsive Design</li>
+                            <li>CMS Integration</li>
+                            <li>SEO Optimization</li>
+                            <li>E-commerce Solutions</li>
+                        </ul>
+                    </div>
+                    <div class="service-card" data-scroll data-scroll-speed="0.8">
+                        <div class="service-icon">💻</div>
+                        <h3>Web Applications</h3>
+                        <p>Complex web applications with custom dashboards, API integration, and admin panels</p>
+                        <ul class="service-features">
+                            <li>Custom Dashboards</li>
+                            <li>API Integration</li>
+                            <li>User Authentication</li>
+                            <li>Database Management</li>
+                        </ul>
+                    </div>
+                    <div class="service-card" data-scroll data-scroll-speed="1">
+                        <div class="service-icon">📱</div>
+                        <h3>Mobile Apps</h3>
+                        <p>Native and hybrid mobile applications for Android and iOS platforms</p>
+                        <ul class="service-features">
+                            <li>Native Development</li>
+                            <li>Cross-Platform Apps</li>
+                            <li>App Store Submission</li>
+                            <li>Push Notifications</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Mobile Swiper -->
+                <div class="swiper services-swiper mobile-only">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <div class="service-icon">🌐</div>
+                                <h3>Website Development</h3>
+                                <p>Custom websites with responsive design, CMS integration, and SEO optimization</p>
+                                <ul class="service-features">
+                                    <li>Responsive Design</li>
+                                    <li>CMS Integration</li>
+                                    <li>SEO Optimization</li>
+                                    <li>E-commerce Solutions</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <div class="service-icon">💻</div>
+                                <h3>Web Applications</h3>
+                                <p>Complex web applications with custom dashboards, API integration, and admin panels</p>
+                                <ul class="service-features">
+                                    <li>Custom Dashboards</li>
+                                    <li>API Integration</li>
+                                    <li>User Authentication</li>
+                                    <li>Database Management</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <div class="service-icon">📱</div>
+                                <h3>Mobile Apps</h3>
+                                <p>Native and hybrid mobile applications for Android and iOS platforms</p>
+                                <ul class="service-features">
+                                    <li>Native Development</li>
+                                    <li>Cross-Platform Apps</li>
+                                    <li>App Store Submission</li>
+                                    <li>Push Notifications</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+     <!-- Team Section -->
+<section id="team" class="team-section">
+  <div class="container">
+    <h2 class="section-title">Meet Our Team</h2>
+    <div class="team-grid">
+
+      <div class="team-card">
+        <div class="team-avatar">
+          <img src="devbaba.jpg" alt="Divyanshu Maurya">
+        </div>
+        <div class="team-info">
+          <h3>Divyanshu Maurya</h3>
+          <p class="team-role">Frontend & Fullstack Developer</p>
+          <p class="team-description">
+            Expert in modern web technologies with experience in React, Node.js, and full-stack development.
+          </p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar">
+          <img src="images/hariom.jpg" alt="Hariom">
+        </div>
+        <div class="team-info">
+          <h3>Hariom</h3>
+          <p class="team-role">Founder & CEO</p>
+          <p class="team-description">
+            Visionary leader driving the company's strategic direction and client satisfaction.
+          </p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar">
+          <img src="founder-portrait.png" alt="Anil">
+        </div>
+        <div class="team-info">
+          <h3>Anil</h3>
+          <p class="team-role">Sales & Business Development</p>
+          <p class="team-description">
+            Expert in client relations and business development for digital solutions.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing-section" data-scroll-section>
+            <div class="container">
+                <h2 style="color: black;" class="section-title" data-scroll data-scroll-speed="1">Our Pricing</h2>
+                
+                <!-- Website Development Pricing -->
+                <div class="pricing-category" data-scroll data-scroll-speed="0.5">
+                    <h3 class="category-title">Website Development</h3>
+                    <div class="pricing-grid">
+                        <div class="pricing-card">
+                            <h4>Basic Website</h4>
+                            <div class="price">₹15,000 - ₹25,000</div>
+                            <ul class="pricing-features">
+                                <li>5-7 pages</li>
+                                <li>Static content</li>
+                                <li>Responsive design</li>
+                                <li>Contact form</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-card featured">
+                            <h4>Business Website</h4>
+                            <div class="price">₹30,000 - ₹50,000</div>
+                            <ul class="pricing-features">
+                                <li>Custom CMS</li>
+                                <li>Blog integration</li>
+                                <li>Services pages</li>
+                                <li>Contact forms</li>
+                                <li>SEO optimization</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-card">
+                            <h4>E-commerce Website</h4>
+                            <div class="price">₹60,000 - ₹1,20,000</div>
+                            <ul class="pricing-features">
+                                <li>Product catalog</li>
+                                <li>Payment gateway</li>
+                                <li>Admin panel</li>
+                                <li>Order management</li>
+                                <li>User accounts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- App Development Pricing -->
+                <div class="pricing-category" data-scroll data-scroll-speed="0.7">
+                    <h3 class="category-title">Web & Mobile App Development</h3>
+                    <div class="pricing-grid">
+                        <div class="pricing-card">
+                            <h4>Web Application</h4>
+                            <div class="price">₹80,000 - ₹2,50,000</div>
+                            <ul class="pricing-features">
+                                <li>Custom dashboard</li>
+                                <li>API integration</li>
+                                <li>Admin panel</li>
+                                <li>User authentication</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-card">
+                            <h4>Android App</h4>
+                            <div class="price">₹70,000 - ₹2,00,000</div>
+                            <ul class="pricing-features">
+                                <li>Native Android app</li>
+                                <li>Custom UI/UX</li>
+                                <li>Database integration</li>
+                                <li>Play Store submission</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-card">
+                            <h4>iOS App</h4>
+                            <div class="price">₹90,000 - ₹2,50,000</div>
+                            <ul class="pricing-features">
+                                <li>Native iOS app</li>
+                                <li>Custom UI/UX</li>
+                                <li>Database integration</li>
+                                <li>App Store submission</li>
+                            </ul>
+                        </div>
+                        <div class="pricing-card featured">
+                            <h4>Hybrid App</h4>
+                            <div class="price">₹1,00,000 - ₹3,00,000</div>
+                            <ul class="pricing-features">
+                                <li>Cross-platform</li>
+                                <li>React Native/Flutter</li>
+                                <li>Single codebase</li>
+                                <li>Both platforms</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terms -->
+                <div class="pricing-terms" data-scroll data-scroll-speed="0.3">
+                    <h3>Terms & Conditions</h3>
+                    <ul>
+                        <li>Project timeline varies from 4 to 12 weeks depending on scope</li>
+                        <li>Payment Terms: 50% advance, 50% on completion</li>
+                        <li>Additional features may incur extra charges</li>
+                        <li>Support & maintenance available at extra cost</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section" data-scroll-section>
+            <div class="container">
+                <h2 class="section-title" data-scroll data-scroll-speed="1">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info" data-scroll data-scroll-speed="0.5">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@springbyte.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 707973674</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Address</h4>
+                                <p>Sector 2, Noida<br>Pin code - 201301<br>Block A-31, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" data-scroll data-scroll-speed="0.7" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="website">Website Development</option>
+                                <option value="webapp">Web Application</option>
+                                <option value="mobile">Mobile App</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+   <!-- Get Started Popup -->
+<div id="estimatePopup" class="popup-overlay">
+  <div class="popup-card">
+    <button class="popup-close" id="closeEstimate">&times;</button>
+
+    <h1>Get a Quick Estimate</h1>
+    <p class="lead">Select a service, share your details, and get an instant estimate. Or contact us directly.</p>
+
+    <!-- Services -->
+    <div>
+      <label class="small">Choose service</label>
+      <div class="services" id="popupServices">
+        <button class="service-btn" data-key="basic">Basic Website</button>
+        <button class="service-btn" data-key="business">Business Website (CMS)</button>
+        <button class="service-btn" data-key="ecom">E-commerce</button>
+        <button class="service-btn" data-key="webapp">Web Application</button>
+        <button class="service-btn" data-key="android">Android App</button>
+        <button class="service-btn" data-key="ios">iOS App</button>
+        <button class="service-btn" data-key="hybrid">Hybrid App</button>
+      </div>
+    </div>
+
+    <!-- Estimate -->
+    <div class="estimate" id="popupEstimate">
+      <strong>Approximate estimate:</strong>
+      <div id="popupEstimateValue">Select a service to see estimate</div>
+    </div>
+
+    <!-- Form -->
+    <form id="popupForm">
+      <div class="row">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="row">
+        <input type="tel" name="phone" placeholder="Phone (optional)">
+        <select name="budgetExpectation">
+          <option value="">Preferred budget (optional)</option>
+          <option value="low">₹15k - ₹50k</option>
+          <option value="medium">₹50k - ₹2.5L</option>
+          <option value="high">Above ₹2.5L</option>
+        </select>
+      </div>
+      <textarea name="details" rows="4" placeholder="Briefly describe your idea / requirements"></textarea>
+
+      <!-- Buttons -->
+      <div class="btn-group">
+        <button type="submit" class="btn main-btn">Request Estimate</button>
+        <a href="tel:+91XXXXXXXXXX" class="btn call-btn">Call Us</a>
+      </div>
+
+      <div id="popupStatus" class="small"></div>
+    </form>
+  </div>
+</div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>SPRINGBYTE SOFTWARE SERVICES</h3>
+                    <p>Professional, affordable, and scalable digital solutions tailored for your business needs.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 style="color: black;">Services</h4>
+                        <ul>
+                            <li><a href="#services">Website Development</a></li>
+                            <li><a href="#services">Web Applications</a></li>
+                            <li><a href="#services">Mobile Apps</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 style="color: black;">Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#team">Our Team</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Springbyte Software Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enhanced JavaScript with GSAP, Locomotive Scroll, and Swiper -->
+    <script src="script.js"></script>
+</body>
+</html>

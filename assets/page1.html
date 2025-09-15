@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">My Portfolio</h1>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="card" onclick="openLink('https://dvyanshu1050.github.io/LENSCRAFT-MEDIA/')">
+        <div class="card-img">
+          <img src="assets/project1.png" alt="LENSCRAFT MEDIA">
+        </div>
+        <div class="card-content">
+          <h3>LENSCRAFT MEDIA</h3>
+          <p>A modern media website showcasing photography and creative content.</p>
+          <p><strong>Technologies:</strong> HTML, CSS, JS</p>
+          <button class="btn">Visit Project ↗</button>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="card" onclick="openLink('https://dvyanshu1050.github.io/pizza1stTrail/')">
+        <div class="card-img">
+          <img src="assets/project2.png" alt="Pizza 1st Trial">
+        </div>
+        <div class="card-content">
+          <h3>Pizza 1st Trial</h3>
+          <p>A pizza ordering landing page with interactive UI and responsive design.</p>
+          <p><strong>Technologies:</strong> HTML, CSS, JS</p>
+          <button class="btn">Visit Project ↗</button>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="card" onclick="openLink('https://dvyanshu1050.github.io/Arka_Library_01/')">
+        <div class="card-img">
+          <img src="assets/project3.png" alt="Arka Library 01">
+        </div>
+        <div class="card-content">
+          <h3>Arka Library 01</h3>
+          <p>Library management system demo showcasing books, users, and lending system.</p>
+          <p><strong>Technologies:</strong> HTML, CSS, JS</p>
+          <button class="btn">Visit Project ↗</button>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="card" onclick="openLink('https://dvyanshu1050.github.io/JewelleryShop/')">
+        <div class="card-img">
+          <img src="assets/project4.png" alt="Jewellery Shop">
+        </div>
+        <div class="card-content">
+          <h3>Jewellery Shop</h3>
+          <p>E-commerce style jewellery shop landing page with product showcase.</p>
+          <p><strong>Technologies:</strong> HTML, CSS, JS</p>
+          <button class="btn">Visit Project ↗</button>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="card" onclick="openLink('https://dvyanshu1050.github.io/my_portfolio/')">
+        <div class="card-img">
+          <img src="assets/project5.png" alt="My Portfolio">
+        </div>
+        <div class="card-content">
+          <h3>My Portfolio</h3>
+          <p>Personal portfolio showcasing projects, skills, and contact form.</p>
+          <p><strong>Technologies:</strong> HTML, CSS, JS</p>
+          <button class="btn">Visit Project ↗</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© <span id="year"></span> My Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

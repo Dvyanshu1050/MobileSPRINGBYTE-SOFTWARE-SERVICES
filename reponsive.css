@@ -1,0 +1,120 @@
+/* Additional responsive utilities for mobile-first design */
+.mobile-only {
+  display: block;
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: block;
+  }
+}
+
+/* Swiper customization for mobile */
+.services-swiper {
+  display: none;
+  padding: 40px 0 60px;
+}
+
+.services-swiper .swiper-slide {
+  height: auto;
+}
+
+.services-swiper .swiper-pagination {
+  bottom: 20px;
+}
+
+.services-swiper .swiper-pagination-bullet {
+  background: var(--primary-color);
+  opacity: 0.3;
+  width: 12px;
+  height: 12px;
+}
+
+.services-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* Enhanced mobile touch targets */
+@media (max-width: 768px) {
+  .btn {
+    min-height: 48px;
+    padding: 16px 24px;
+  }
+
+  .nav-link {
+    padding: 12px 0;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-item {
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    min-height: 48px;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0f172a;
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --card-bg: #1e293b;
+    --border-color: #334155;
+  }
+
+  .header {
+    background: rgba(15, 23, 42, 0.95);
+  }
+
+  .hero-section {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .btn-primary {
+    border: 2px solid var(--primary-color);
+  }
+
+  .service-card,
+  .team-card,
+  .pricing-card {
+    border: 2px solid var(--border-color);
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .hero-section::before {
+    animation: none;
+  }
+
+  .spinner {
+    animation: none;
+    border: 4px solid var(--primary-color);
+  }
+
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
